@@ -32,8 +32,8 @@
   {
     "title": "Hack or Snooze (HackerNews Clone)",
     "image": "./projectImages/hackOrSnoozeMock.png",
-    "technologies": "JavaScript | Node.js",
-    "description": "A quiz app on the fundamentals of JavaScript. There are 5 randomly selected multiple-choice questions and the user will have a time limit of 50 seconds. The remaining time will determine their score at the end. The user will be penalised by 10 seconds for every incorrect answer.",
+    "technologies": "JavaScript | Node.js | NextJS",
+    "description": "This is a clone of the Hackernews forum/website. It was my first time learning backend frameworks and really liked the simplicity and power of Node.js and NextJS.",
     "github": "https://github.com/djordan218/Hack-or-Snooze",
     "deployed": "https://djordan218.github.io/Hack-or-Snooze/",
     "bgcolor": "#fb6304",
