@@ -1,6 +1,6 @@
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const Form = () => {
   const [ref, inView] = useInView({
@@ -11,11 +11,11 @@ const Form = () => {
   const [success, setSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-    access_key: "4f412a8f-0a11-4ba9-8e37-e12661f36602",
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    access_key: '4e56a161-0313-452c-8d09-124fe4642a1b',
   });
 
   const handleChange = (e) => {
@@ -30,11 +30,11 @@ const Form = () => {
 
     const data = JSON.stringify(formData);
 
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
       },
       body: data,
     })
@@ -43,10 +43,10 @@ const Form = () => {
         setSuccess(true);
         setFormData({
           ...formData,
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
         });
         setTimeout(() => {
           setSuccess(false);
@@ -60,13 +60,16 @@ const Form = () => {
       action=""
       ref={ref}
       className="contactForm"
-      initial={{ x: "-10vw", opacity: 0 }}
-      animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
+      initial={{ x: '-10vw', opacity: 0 }}
+      animate={inView ? { x: 0, opacity: 1 } : { x: '-10vw', opacity: 0 }}
+      transition={{ duration: 0.4, ease: 'easeInOut' }}
       onSubmit={handleSubmit}
     >
-      <h4 className="contentTitle">Message Me</h4>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <h4 className="contentTitle">Let's chat!</h4>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: 'inline-block' }}
+      >
         <input
           type="text"
           className="formControl"
@@ -78,7 +81,10 @@ const Form = () => {
           required
         />
       </div>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: 'inline-block' }}
+      >
         <input
           type="email"
           className="formControl"
@@ -115,7 +121,9 @@ const Form = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message Sent" : "Send Message"}</button>
+        <button className="btn">
+          {success ? 'Message Sent' : 'Send Message'}
+        </button>
       </div>
     </motion.form>
   );

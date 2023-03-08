@@ -8,7 +8,8 @@
 }
 
 .landingImage {
-  right: 0px;
+  right: -200px;
+  top: 100px;
 }
 
 /* .landing .socialIcons {

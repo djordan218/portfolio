@@ -1,40 +1,40 @@
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import landingImage from "../../images/me.svg";
-import SocialIcons from "../../components/SocialIcons";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import landingImage from '../../images/landing.jpg';
+import SocialIcons from '../../components/SocialIcons';
 
 const Landing = ({ name, tagline }) => {
   const styles = {
     landing: {
-      height: "calc(100% - 93px)",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
+      height: 'calc(100% - 93px)',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
 
     landingImage: {
-      position: "absolute",
-      bottom: "0",
-      opacity: "0.3",
-      mixBlendMode: "lighten",
-      height: "80%",
+      position: 'absolute',
+      bottom: '10',
+      opacity: '.3',
+      mixBlendMode: 'lighten',
+      height: '90%',
     },
 
     textContainer: {
-      display: "flex",
-      flexDirection: "column",
-      letterSpacing: "1px",
-      textAlign: "center",
-      zIndex: "1",
-      color: "#fff",
-      textShadow: "1px 1px 3px #000",
+      display: 'flex',
+      flexDirection: 'column',
+      letterSpacing: '1px',
+      textAlign: 'center',
+      zIndex: '1',
+      color: '#fff',
+      textShadow: '1px 1px 3px #000',
     },
 
     name: {
-      color: "#fff",
-      fontWeight: "700",
-      marginTop: "-100px",
-      paddingBottom: "28px",
+      color: '#fff',
+      fontWeight: '700',
+      marginTop: '-100px',
+      paddingBottom: '28px',
     },
   };
 
@@ -50,18 +50,18 @@ const Landing = ({ name, tagline }) => {
           className="name"
           style={styles.name}
           ref={ref}
-          initial={{ y: "-10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 1 } : { y: "-10vw", opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          initial={{ y: '-10vw', opacity: 0 }}
+          animate={inView ? { y: 0, opacity: 1 } : { y: '-10vw', opacity: 0 }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
         >
           {name}
         </motion.h1>
         <motion.p
           className="description"
           ref={ref}
-          initial={{ y: "10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          initial={{ y: '10vw', opacity: 0 }}
+          animate={inView ? { y: 0, opacity: 1 } : { y: '10vw', opacity: 0 }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
         >
           {tagline}
         </motion.p>
@@ -70,9 +70,9 @@ const Landing = ({ name, tagline }) => {
         <motion.img
           className="landingImage"
           ref={ref}
-          initial={{ y: "10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 0.4 } : { y: "10vw", opacity: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          initial={{ y: '10vw', opacity: 0 }}
+          animate={inView ? { y: 0, opacity: 0.4 } : { y: '10vw', opacity: 0 }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
           style={styles.landingImage}
           src={landingImage}
           alt=""

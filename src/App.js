@@ -1,15 +1,15 @@
-import Header from "./components/Header";
-import AnimatedRoutes from "./components/AnimatedRoutes";
+import Header from './components/Header';
+import AnimatedRoutes from './components/AnimatedRoutes';
 
 function App() {
   const personalDetails = {
-    name: "Michael Yeates",
-    location: "Loughborough, UK",
-    tagline: "I'm a Developer",
-    email: "michael-yeates@outlook.com",
-    availability: "Open for work",
+    name: 'Daniel Jordan',
+    location: 'Tulsa, Oklahoma',
+    tagline: 'Web Developer | Software Engineer',
+    email: 'djordan218@gmail.com',
+    availability: 'Open to work!',
     brand:
-      "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centred digital products.",
+      "I may be new to the tech field, but my love for programming and problem-solving goes back years. I'm a creative thinker, a problem-solver, self-driven, and refuse to believe I can't figure something out. I have the desire to make anything I'm associated with better and greater. I always have the end user in mind and refuse to settle for anything less than great. I finished Springboard's Software Engineering Career Track in early 2023 and am looking to get my first job as a Web Developer/Software Engineer. ",
   };
 
   return (

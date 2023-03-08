@@ -18,7 +18,8 @@
 }
 
 .personalImage img {
-  height: 250px;
+  height: 30vh;
+  width: auto;
   z-index: 50;
   border-radius: 250px;
   border: 1px solid var(--grey);
@@ -26,6 +27,10 @@
 
 .contentContainer {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contentContainer h4 {
@@ -45,6 +50,11 @@
   color: var(--secondary-text-color);
 }
 
+.contentDescription p {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
 .infoContainer {
   border-top: 1px solid var(--grey);
   margin-top: var(--sm-spacing);
@@ -53,10 +63,14 @@
 
 .info {
   padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .infoContainer span {
   color: var(--text-color);
+  display: flex;
 }
 
 .infoContainer p {
@@ -78,7 +92,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: var(--sm-spacing);
 }
 
 .downloadCV {
@@ -86,37 +99,15 @@
   margin-bottom: var(--sm-spacing);
 }
 
-.about .socialIcons .icon {
-  display: none;
-}
-
-@media (min-width: 750px) {
-  .about .socialIcons .icon {
-    display: inline;
-  }
-
-  .about .socialIcons::before {
-    background-color: var(--grey);
-    content: "";
-    height: 2px;
-    width: var(--sm-spacing);
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-right: 10px;
-  }
-}
-
 @media (min-width: 992px) {
   .personalImage img {
     height: 330px;
     z-index: 50;
     border-radius: 0;
-    padding: 6px;
   }
 
   .personalImage {
-    height: 330px;
-
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;

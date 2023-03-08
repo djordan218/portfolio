@@ -1,7 +1,7 @@
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
-const ContactInfo = ({ name, email, location }) => {
+const ContactInfo = ({ name, email, location, availability }) => {
   const [ref, inView] = useInView({
     threshold: 0,
     triggerOnce: true,
@@ -10,17 +10,20 @@ const ContactInfo = ({ name, email, location }) => {
     <motion.div
       className="contactInfo"
       ref={ref}
-      initial={{ x: "10vw", opacity: 0 }}
-      animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
+      initial={{ x: '10vw', opacity: 0 }}
+      animate={inView ? { x: 0, opacity: 1 } : { x: '10vw', opacity: 0 }}
+      transition={{ duration: 0.4, ease: 'easeInOut' }}
     >
       <h4 className="contentTitle">Contact Information</h4>
-      <p className="infoDescription">Open for opportunities. Let's connect and build something awesome together! </p>
+      <p className="infoDescription">
+        I'm open for any opportunities. Let's connect and do something really
+        cool.
+      </p>
       <ul className="listInfo">
         <li>
           <div className="personalContactInfo">
             <span className="infoIcon">
-              <i className="icon fa-solid fa-user"></i>{" "}
+              <i className="icon fa-solid fa-user"></i>{' '}
             </span>
             <div className="mediaWrap">
               <h6 className="infoType">Name</h6>
@@ -31,7 +34,7 @@ const ContactInfo = ({ name, email, location }) => {
         <li>
           <div className="personalContactInfo">
             <span className="infoIcon">
-              <i className="icon fa-solid fa-location-pin "></i>{" "}
+              <i className="icon fa-solid fa-location-pin "></i>{' '}
             </span>
             <div className="mediaWrap">
               <h6 className="infoType">Location</h6>
@@ -42,13 +45,24 @@ const ContactInfo = ({ name, email, location }) => {
         <li>
           <div className="personalContactInfo">
             <span className="infoIcon">
-              <i className="icon fa-solid fa-envelope "></i>{" "}
+              <i className="icon fa-solid fa-envelope "></i>{' '}
             </span>
             <div className="mediaWrap">
               <h6 className="infoType">Email</h6>
               <span className="infoValue">
                 <a href={`mailto:${email}`}>{email}</a>
               </span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="personalContactInfo">
+            <span className="infoIcon">
+              <i className="icon fa-solid fa-check "></i>{' '}
+            </span>
+            <div className="mediaWrap">
+              <h6 className="infoType">Availability</h6>
+              <span className="infoValue">{availability}</span>
             </div>
           </div>
         </li>

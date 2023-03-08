@@ -1,11 +1,17 @@
-import AboutMe from "../../components/AboutMe";
-import PageHeader from "../../components/PageHeader";
+import AboutMe from '../../components/AboutMe';
+import PageHeader from '../../components/PageHeader';
 
 const About = ({ name, location, brand, email, availability }) => {
   return (
     <section className="about">
-      <PageHeader title="About Me" description="Let me introduce myself" />
-      <AboutMe name={name} location={location} brand={brand} email={email} availability={availability} />
+      <PageHeader title="About Me" description="Just a little bit" />
+      <AboutMe
+        name={name}
+        location={location}
+        brand={brand}
+        email={email}
+        availability={availability}
+      />
     </section>
   );
 };
