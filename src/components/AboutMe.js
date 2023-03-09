@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from 'react';
 import resume from '../pages/about/Daniel-Jordan-Resume.pdf';
 
-const AboutMe = ({ name, email, location, availability, brand }) => {
+const AboutMe = ({ name, email, location, availability, brand, brand2 }) => {
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -52,10 +52,13 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           <div className="contentContainer">
             <h5 style={{ textAlign: 'center' }}>
               Motivated Web Developer that is new to the field, but not new to
-              hard work, dedication, and problem-solving.
+              hard work, excellence, versatility, innovation, and
+              problem-solving.
             </h5>
             <div className="contentDescription">
               <p>{brand}</p>
+              <br />
+              <p>{brand2}</p>
             </div>
             <div className="buttonContainer">
               <button
