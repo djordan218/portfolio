@@ -5,7 +5,7 @@
     "description": "This was a dream project. I am in the 395th Army Band and serve as a senior leader and platoon sergeant. Communication is key in the unit because we only meet once a month and two weekends over the summer. I created this app to serve as a quick reference for important documents, announcements, and contact info. I also implemented a task manager for admins that allows for adding/editing/deleting tasks and assigning them to specific Soldiers, which then populates in their `My Tasks` screen. This was my first time working with React Native/Expo and it was a lot of fun and I learned a lot about the simple, yet powerful framework that is React Native.",
     "technologies": "JavaScript | React | React Native | Supabase | SQL",
     "github": "https://github.com/djordan218/395AB-React-Native",
-    "deployed": "https://github.com/djordan218/395AB-React-Native",
+    "deployed": "https://apps.apple.com/us/app/395ab/id6445925279",
     "bgcolor": "#5d5501",
     "id": "1"
   },
@@ -30,6 +30,16 @@
     "id": "3"
   },
   {
+    "title": "Weather, Will I?",
+    "image": "./projectImages/weatherMockUp.png",
+    "technologies": "HTML | CSS | JavaScript | React | Reactstrap | Bootstrap",
+    "description": "This is a website in progress, but it is currently a weather web app that lets a user search for their city (using a dynamic search bar), shows current and future weather, and eventually will have some flip cards that will answer common questions like `Will I need a coat?`, `Will I need an umbrella`, etc...",
+    "github": "https://github.com/djordan218/weather-will-i",
+    "deployed": "http://weatherwilli.com",
+    "bgcolor": "#b9637f",
+    "id": "4"
+  },
+  {
     "title": "Hack or Snooze (HackerNews Clone)",
     "image": "./projectImages/hackOrSnoozeMock.png",
     "technologies": "JavaScript | Node.js | NextJS",
@@ -37,7 +47,7 @@
     "github": "https://github.com/djordan218/Hack-or-Snooze",
     "deployed": "https://djordan218.github.io/Hack-or-Snooze/",
     "bgcolor": "#fb6304",
-    "id": "4"
+    "id": "5"
   },
   {
     "title": "Jeopardy",
@@ -47,7 +57,7 @@
     "github": "https://github.com/djordan218/Jeopardy",
     "deployed": "https://djordan218.github.io/Jeopardy/",
     "bgcolor": "#060e7d",
-    "id": "5"
+    "id": "6"
   },
   {
     "title": "Connect Four",
@@ -57,6 +67,6 @@
     "github": "https://github.com/djordan218/Connect-Four-JavaScript",
     "deployed": "https://djordan218.github.io/Connect-Four-JavaScript/",
     "bgcolor": "#844929",
-    "id": "6"
+    "id": "7"
   }
 ]
