@@ -3,7 +3,7 @@
     "title": "395th Army Band Mobile App",
     "image": "./projectImages/1.png",
     "description": "This was a dream project. I am in the 395th Army Band and serve as a senior leader and platoon sergeant. Communication is key in the unit because we only meet once a month and two weekends over the summer. I created this app to serve as a quick reference for important documents, announcements, and contact info. I also implemented a task manager for admins that allows for adding/editing/deleting tasks and assigning them to specific Soldiers, which then populates in their `My Tasks` screen. This was my first time working with React Native/Expo and it was a lot of fun and I learned a lot about the simple, yet powerful framework that is React Native.",
-    "technologies": "JavaScript | React | React Native | Supabase | SQL",
+    "technologies": "JavaScript | React | React Native | Supabase | SQL | iOS | Android",
     "github": "https://github.com/djordan218/395AB-React-Native",
     "deployed": "https://apps.apple.com/us/app/395ab/id6445925279",
     "bgcolor": "#5d5501",
@@ -12,7 +12,7 @@
   {
     "title": "Green Thumb",
     "image": "./projectImages/gtMock.png",
-    "technologies": "JavaScript | React | Node.js | PostgreSQL | Bootstrap",
+    "technologies": "JavaScript | React | Node.js | PostgreSQL | Bootstrap | MBD | AWS",
     "description": "My wife and I are avid gardeners. I was looking to make an app that serves as a garden manager and this is what I came up with! I made my own API, hosted on AWS (frontend is S3, API Gateway then calls a Lambda function). Users can add/edit/delete crops from the API that only they create, except for admins - who can add/edit/delete anything. Each crop displays germination/harvest time as well as a brief description. I had a lot of fun with this project and learned a lot about React and just how powerful and responsive it can be.",
     "github": "https://github.com/djordan218/GreenThumb",
     "deployed": "http://www.greenthumb-app.xyz.s3-website-us-east-1.amazonaws.com/",
@@ -22,7 +22,7 @@
   {
     "title": "Movie or Snoozie",
     "image": "./projectImages/movieMock.png",
-    "technologies": "JavaScript | Python | Flask",
+    "technologies": "JavaScript | Python | Flask | Bootstrap | AWS",
     "description": "Movie or Snoozie is a fun web app I made that serves as a movie search. A user can save data to localStorage regarding their standards of movie ratings as well as their bedtime. When a user selects a movie, it decides if it is worth watching based on those parameters the user saved.",
     "github": "https://github.com/djordan218/movie-or-snoozie",
     "deployed": "http://ec2-35-175-104-106.compute-1.amazonaws.com:8000//",
@@ -32,18 +32,28 @@
   {
     "title": "Weather, Will I?",
     "image": "./projectImages/weatherMockUp.png",
-    "technologies": "HTML | CSS | JavaScript | React | Reactstrap | Bootstrap",
-    "description": "This is a website in progress, but it is currently a weather web app that lets a user search for their city (using a dynamic search bar), shows current and future weather, and eventually will have some flip cards that will answer common questions like `Will I need a coat?`, `Will I need an umbrella`, etc...",
+    "technologies": "HTML | CSS | JavaScript | React | Reactstrap | Bootstrap | MUI | AWS",
+    "description": "This is a website in progress, but it is currently a weather web app that lets a user search for any city (using a dynamic search bar), shows current and future weather, and has some 'Will I...' questions that populate based on the searched weather results. Hosted on AWS in an S3 bucket.",
     "github": "https://github.com/djordan218/weather-will-i",
     "deployed": "http://weatherwilli.com",
     "bgcolor": "#b9637f",
     "id": "4"
   },
   {
+    "title": "Portfolio Website",
+    "image": "./projectImages/portfolioMockUp.png",
+    "technologies": "HTML | CSS | JavaScript | React | AWS",
+    "description": "The portfolio website you're on now! Built using React. Hosted on AWS in an S3 bucket.",
+    "github": "https://github.com/djordan218/portfolio",
+    "deployed": "http://www.danielthedeveloper.com/",
+    "bgcolor": "#2b353c",
+    "id": "8"
+  },
+  {
     "title": "Hack or Snooze (HackerNews Clone)",
     "image": "./projectImages/hackOrSnoozeMock.png",
-    "technologies": "JavaScript | Node.js | NextJS",
-    "description": "This is a clone of the Hackernews forum/website. It was my first time learning backend frameworks and really liked the simplicity and power of Node.js and NextJS.",
+    "technologies": "JavaScript | Node.js | NextJS | Github",
+    "description": "This is a clone of the Hackernews forum/website. It was my first time learning backend frameworks and really liked the simplicity and power of Node.js and NextJS. Frontend hosted through Github Pages.",
     "github": "https://github.com/djordan218/Hack-or-Snooze",
     "deployed": "https://djordan218.github.io/Hack-or-Snooze/",
     "bgcolor": "#fb6304",
@@ -52,8 +62,8 @@
   {
     "title": "Jeopardy",
     "image": "./projectImages/jeopardyMock.png",
-    "technologies": "HTML | CSS | JavaScript",
-    "description": "A JavaScript based web app that uses game logic, utilizes an API, and some good ole-fashioned DOM manipulation. Had a lot of fun with this one, but I did learn about the imperfections of APIs and how to manipulate API responses with a little conditioning.",
+    "technologies": "HTML | CSS | JavaScript | Github",
+    "description": "A JavaScript based web app that uses game logic, utilizes an API, and some good ole-fashioned DOM manipulation. Had a lot of fun with this one, but I did learn about the imperfections of APIs and how to manipulate API responses with a little conditioning. Hosted through Github Pages.",
     "github": "https://github.com/djordan218/Jeopardy",
     "deployed": "https://djordan218.github.io/Jeopardy/",
     "bgcolor": "#060e7d",
@@ -62,11 +72,12 @@
   {
     "title": "Connect Four",
     "image": "./projectImages/connect4Mock.png",
-    "technologies": "HTML | CSS | JavaScript",
-    "description": "This was a fun game-logic project when learning the in's and out's of JavaScript. I learned about DOM manipulation, game logic, and working with APIs.",
+    "technologies": "HTML | CSS | JavaScript | Github",
+    "description": "This was a fun game-logic project when learning the in's and out's of JavaScript. I learned about DOM manipulation, game logic, and working with APIs. Hosted through Github Pages.",
     "github": "https://github.com/djordan218/Connect-Four-JavaScript",
     "deployed": "https://djordan218.github.io/Connect-Four-JavaScript/",
     "bgcolor": "#844929",
     "id": "7"
   }
 ]
+
